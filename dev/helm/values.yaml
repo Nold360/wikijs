@@ -12,6 +12,9 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
+# Enable offline ("air-gapped") mode, will require sideloading locale files
+offlineMode: false
+
 serviceAccount:
   # Specifies whether a service account should be created
   create: true
@@ -89,7 +92,7 @@ sideload:
   repoURL: https://github.com/Requarks/wiki-localization
 
   ## This can be helpfull if you have internet access over a http proxy:
-  env: {}
+  env: []
   #  - name: HTTPS_PROXY
   #    value: http://my.proxy.com:3128
 
